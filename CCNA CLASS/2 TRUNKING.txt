@@ -1,0 +1,33 @@
+
+TRUNK:- it is configured to transfer vlan traffic from
+	one switch to another one.
+- Trunk links:-
+	-don't belong to any vlan
+	-carry multiple vlan's traffic
+	-link between two switches
+
+Trunking protocols
+	ISL				    IEE 802.1q
+-it is cisco proprietary		  - open standard
+-it add 30 byte of tag			  -only  4bytes of tag will be 
+				addedd to orginal frames.
+
+How to configure trunk in layer3 switches.
+Switch(config)#int range g0/1 -2
+Switch(config-if-range)#switchport mode access
+witch(config-if)#switchport trunk encapsulation dot1q 
+Switch(config-if)#switchport mode trunk
+
+How to configure trunk in layer2 switches
+Switch(config)#int range g0/1 -2
+Switch(config-if-range)#switchport mode access
+Switch(config-if)#switchport mode trunk
+
+
+
+
+
+
+
+
+	

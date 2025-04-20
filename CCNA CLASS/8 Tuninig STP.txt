@@ -1,0 +1,23 @@
+
+		Tuning stp
+
+1 cost modification
+2 bridge id modification
+3 port-priority modification
+
+how to change cost  (decreasing)
+#int g0/2
+#spanning-tree vlan1 cost 2
+
+how to change cost  (increasing)
+
+
+2changing port-prioirty:-
+
+chaning port priority is done on root bridge switch that is 
+connected inteface.
+#int g0/2
+#spanning-tree port-priority 16
+#end
+
+

@@ -1,0 +1,22 @@
+		
+		IVR - inter vlan routing
+
+-By default different vlan directly can't communicate with each other.
+-To communicate between different vlans there should be routing, 
+ requres layer 3 devices
+Def:- inter vlan routing makes communication between multiple vlans.
+
+Types of inter vlan routing:-
+
+1 ivr using standard gateway:-
+
+2 ivr using subinterfaces:-
+
+3 ivr using layer 3 switch:-
+
+IVR using standard gateway:-
+	-Single gateway / Router is used to establish communication between 2 vlans
+
+IVR using subinterfaces:-
+	-using subinterface we create multiple interfaces for vlans and define 
+        encapsulation dot1q for vlans to communicate each other.

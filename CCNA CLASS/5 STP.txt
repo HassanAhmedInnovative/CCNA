@@ -1,0 +1,38 @@
+		stp:spanning tree protcol
+stp is open standard protocol IEEE 802
+stp is enabled by default in all catalysts swithces.
+when ever there is redundancy connection, stp enabled switches
+can't understand that makes loop in the network.
+Every switch sends bpdu (bridge protocol data unit), try to understand
+that there is loop network, tries over come loop.
+How to over the come loop :-
+1 selecting the root bridge
+2 seleting the root port
+3 selecting designated port(fwd) & non designated port(blocked port)
+**The root Bridge**
+- the bridge with lowest bridge id
+	Bridge id - priority+mac address of the switch
+	Root bridge will interface in fwd state
+**Selecting the root port**
+	It is shortest root bridge to reach
+		1 least cost
+		2 the lowest forwarding  upstream root bridge id
+		3 lowest forwarding upstream port number
+**designated & non designated
+  		1 least cost
+		2 the lowest bridge id
+
+stp port states
+listening  - 15 sec
+learning     - 15 sec
+forwarding  - no limit
+disable      - no limit
+blocking   -  20 seconds
+
+how to make non root bridge switch as root bridge
+
+#spanning-tree vlan 1 root primary
+#spanning-tree vlan 1 priority 4096
+
+	
+

@@ -1,0 +1,55 @@
+
+		what is a firewall:-
+
+firewall is security device placed between trusted & untrusted
+networks (zones-inside,outside & dmz).
+
+Firewall filters data based on policies created
+by administrator, it can permit or deny traffic based on 
+ip address, applications & user identification.
+
+firewalls are two types:-
+hardware
+software
+
+Firewall vendors:- cisco, paloalto, fortinet,checkpoint
+		   juniper,sophos,sonicwall, watchguard
+		   pfsense,
+
+Types of firewall:-
+
+1 stateless firewall
+2 statefull firewall
+3 packet filtering firewall
+4 application firewall
+5 proxy firewall
+6 utm- unified threat management
+7 NGFW- next generation firewall
+
+____________________________________________________
+ciscoasa#show version   --view device information
+ciscoasa#show flash	--view operating system & files in the hard disk
+ciscoasa#show disk	--view partitions informations
+ciscoasa#show interface ip brief  --- detail informaiton about interfaces
+ciscoasa#show  route  --- show routing table information
+ciscoasa#show clock   --- display device date & time
+ciscoasa#show history --- display last executed commands
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+
+	spanning tree uplink fast
+
+-legacy / cisco proprietary feature
+-it is speed convergence when a direct link fails connected to 
+  upstream switches.
+-If a direct link fails it will take 30 seconds
+
+-If a indirect link fails will take 50 seconds
+
+#spanning-tree uplinkfast
+

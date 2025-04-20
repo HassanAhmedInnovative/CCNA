@@ -1,0 +1,106 @@
+
+VTP- VLAN TRUNKING PROTOCOL
+-vtp is cisco proprietarty protocol
+-vtp maintains consistant vlan dtabase every catlyst swithces.
+-vtp manages to delete, modify, create vlan.
+
+vtp mode:-
+1 server  mode
+2 client  mode
+3 Transparent mode
+
+Server:-
+-create, modify, & delete vlans
+-synchoronization vlan configurations
+-Saved in nvram
+
+client:-
+-can't create modify delete vlan
+-forward advertizements
+-don't save in nvram
+
+Transparent mode:-
+-can add, modify & delete it's own vlan database
+-does not synchronize vlan database
+-forward advertizements
+-saves configuration nvram
+
+configuration of vtp:-
+
+vtp domain name, password, vtp version should  be same..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch1>
+Switch1>en
+Switch1#conf t
+Switch1(config)#int ra g0/1 -2
+Switch1(config-if-range)#sw mode access
+Switch1(config-if-range)#sw mode trunk
+
+Switch2>
+Switch2>en
+Switch2#conf t
+Switch2(config)#int ra g0/1 -2
+Switch2(config-if-range)#sw mode access
+Switch2(config-if-range)#sw mode trunk
+
+Switch#sh interfaces trunk
+
+
+***************************************
+How to configure vtp mode server
+Switch#conf t
+Switch(config)#vtp domain cisco
+Switch(config)#vtp password cisco
+Switch(config)#vtp version 2
+Switch(config)#vtp mode server
+
+
+
+
+
+
+
+
+
+********Advanced vtp ************
+
+VTP PRUNING:- It enables efficent use of trunk bandwidth 
+redundancy unnessary flooded traffic.
+
+Switch(config)#vtp pruning
+Switch(config)#int range g0/1 -2
+Switch(config-if)#switchport trunk pruning vlan add 10,20,30
+
+#switchport trunk pruning vlan (add/all/execept)
+
+#switchport trunk pruning vlan remove (3, 10-15)
+
+******** vtp version 3 *********
+-protection against data overwrites.
+(to fix revison number higher one to be updated)
+
+vtp roles:-		process		configure	save
+primary server		yes		yes		yes
+
+secondary server	yes		no		yes
+
+client			yes		no		no
+
+transparent		yes		yes		yes
+
+
+

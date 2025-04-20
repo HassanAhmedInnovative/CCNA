@@ -1,0 +1,40 @@
+
+	*** Introduction to Router ***
+
+Router is layer3 device used to connect multiple networks.
+Router connects lan & wan.
+Router does routing; routing is process of sending packets to destination
+by selecting best path.
+Router maintains routing table which is destination base for router to send  & receive packets. Routing table consist of source network,destination network, &hop.
+
+Main components of the router:-
+1 Motherboard
+2 Processor
+3 Rom
+4 Ram  -- saves running configuration
+5 nvram  - saves startup configuration
+6 flash - it contain cisco ios - internetwork operating system
+7 interfaces:-
+	fastethernet/gigabitethernet ---- used to connect lan
+	serial --- used to connect wan
+8 ports:-
+	1 console-- used to access device locally
+	2 aux -- used to access device remotely
+9 usb
+10 smps - switched mode power supply
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

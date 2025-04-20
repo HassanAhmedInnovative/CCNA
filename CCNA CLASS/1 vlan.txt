@@ -1,0 +1,58 @@
+
+vlan:- virtual lan
+	Dividing a large network into multiple networks
+	Dividing a single broadcast domain, into multiple broadcast 	
+        domains is called as vlan
+
+types:-
+1 static :- it is created manually by admin
+	    it is ports based vlan
+	    
+2 dynamic:- it is create using applications VMPS
+	    vmps- vlan membership policy server
+	    it is based on mac address / user name/ 
+            computer name/
+
+
+
+
+
+
+
+
+How to create vlan
+
+Switch>enable
+Switch#configure terminal
+Switch(conf)#vlan 10
+Switch(conf-vlan)#name sales
+Switch(conf-vlan)#end
+Switch#show vlan
+
+How to add interfaces in vlan
+switch>enable
+Switch#configure terminal
+Switch(conf)#interace f0/1
+Switch(conf-if)#switchport mode access
+Switch(conf-if)#switchport access vlan 10
+Switch(conf-if)#end
+
+How to add multiple interfaces
+switch>enable
+Switch#configure terminal
+Switch(conf)#interface range f0/3 -4
+Switch(conf-if)#switchport mode access
+Switch(conf-if)#switchport access vlan 20
+Switch(conf-if)#end
+
+specific interfaes
+Switch(conf)#interface range f0/10,f0/15,f0/20
+witch(conf-if)#switchport mode access
+Switch(conf-if)#switchport access vlan 10
+
+
+
+
+
+n 3
+Switch(conf-if)#end

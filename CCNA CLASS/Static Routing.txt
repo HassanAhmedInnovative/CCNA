@@ -1,0 +1,17 @@
+
+	
+*** Static Routing  ***
+It is route which manually configured by administrator to reach 
+known destination.
+
+If we want to configure static routing, administrator should know 
+destination network address.
+
+-Static routes are more suitable for small networks.
+
+-By default administrative distance for static routes are 1
+
+Syntax:-
+	Ip route   <dst n/w id>  <s/m>  <next hop>
+
+

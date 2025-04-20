@@ -1,0 +1,129 @@
+	**** Intial Configuration of the device ****
+
+1 Hostname
+2 Banner
+3 Password configuration
+4 User creaton 
+*******************************************
+Hostname:- it is name of the device; used to identify.
+
+Router>enable
+Router#configure terminal
+Router(conf)#hostname IBM_HYD_R1
+IBM_HYD_R1(conf)#
+
+To remove hostname
+Router(conf)#no hostname 
+------------------------------------------------
+Banner:- It is used for login messages; provides some physical security
+
+Router>enable
+Router#configure terminal
+Router(conf)#banner motd $unauthroised access is presecutred$
+Router(conf)#exit
+
+To remove banner
+Router(conf)#no banner motd
+--------------------------------------------------
+3 Password configurations:-
+	1 Lines password
+	2 enable / privilege password
+
+Lines are three types:-
+1 console:- used to access device locally
+2 aux :- used to access device using isdn/pstn connection
+3 vty :- used to access device remotely using ssh/telnet
+
+To configure console password:-
+
+Router>enable
+Router#conf  t
+Router(conf)#line console  0
+Router(conf-line)#password ccna
+Router(conf-line)#login 
+Router(conf-line)#end
+
+To remove console password:-
+
+Router>enable
+Router#conf  t
+Router(conf)#line console  0
+Router(conf-line)#no password
+Router(conf-line)#no login
+Router(conf-line)#end
+
+To configure aux password:-
+Router>enable
+Router#conf  t
+Router(conf)#line aux 0
+Router(conf-line)#password firewallzone
+Router(conf-line)#login 
+Router(conf-line)#end
+
+To verify:-
+Router#show run
+
+To configure vty password
+
+Router(conf)#line vty 0 4
+Router(conf-line)#password hyderabad
+Router(conf-line)#login
+Router(conf-line)#end
+
+Router#show run
+
+To enabel password encryption sevice:-
+Router(conf)#service password-encryption
+
+Router(conf)#exit
+Router#show run
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

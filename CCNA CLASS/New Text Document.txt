@@ -1,0 +1,37 @@
+
+	****Introduction to Router ****
+
+Router is layer3 device used to connect multiple networks.
+Router connects lan & wan.
+Router does routing; routing is process of sending packet to destination
+by selecting best path.
+
+Router maintains routing table that consist of source network, destination
+network, & next hop information.
+Routing table is destination base for router to forward data.
+
+Router kinds:-
+1 Fixed router :- we can't add or modify new hardware
+2 Modular :- we can add & modify new hardware.
+
+Components of the router:-
+1 processor
+2 motherboard
+3 Rom
+4 RAM -- saves running-configuration
+5 NVRAM -- saves startup-configuration
+6 FLASh -- it is hard disk contain cisco operating system
+		cisco-ios internetwork operating system
+7 usb
+8 interfaces
+	lan - fastethernet  -- used to connect lan
+	wan - serial -- used to connect wan
+9 ports
+	console  - used to access device locally to configure
+	aux --used to access device remotely
+10 smps
+
+
+
+
+

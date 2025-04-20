@@ -1,0 +1,34 @@
+		****Ether Channel****
+
+-used to aggregate bandwidth between multiple L2/L3 interfaces
+-provides redundancy by aggreating links between switches
+-ether channel load balances traffic
+-maximum 8 links are combined as one logical link
+
+-Ether channel protocols
+
+	PAGP				LACP
+-port aggregation protocol      -link access control protocol
+-cisco proprietary		-standard --(cisco - non cisco)
+
+-auto - passive negotiate	-active  -- active negotiate
+-Desireable - active 		-passive -- passive 
+
+
+
+
+
+
+Switch1 & switch do trunk 
+
+#int ra f0/1 -4
+#switchport mode access
+#swtchport mode trunk
+
+In the switch1
+#int ra f0/1 -4
+#channel-group 1 mode desirable
+
+in the switch2
+#int ra f0/1 -4
+#channel-group 1 mode auto

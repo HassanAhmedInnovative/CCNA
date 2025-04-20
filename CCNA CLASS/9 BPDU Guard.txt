@@ -1,0 +1,27 @@
+
+		**BPDU Guard**
+when a portfast enabled interface, it is connected to switches that
+cause some broadcast messages; loops.
+
+To proivde security we configure
+	- bpdu guard
+	- bpdu filter
+
+bpdu guard:- when a portfast enable switch receive a bpdu message
+,bpdu guard is going to keep port in to error-disable mode -- (shutdown)
+
+bpdu guard
+global #spa portfast bpduguard default
+
+interface
+#spa bpdugurard enable
+
+how to configure bpdu filter
+global
+#spa portfast bpdufilter default
+
+interface
+#spa bpdufilter enable
+
+
+

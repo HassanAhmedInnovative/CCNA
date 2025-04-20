@@ -1,0 +1,16 @@
+
+	****Default - Routing *****
+
+It is route manually configured by administrator to reach unknown 
+destinations / end networks
+
+Default routes mostly configured for accessing internet.
+
+Default route takes bottom list in the routing table
+
+Cisco advices to configure a single default route 
+
+By default administrative distance for default route is 1
+
+ip route  0.0.0.0  0.0.0.0 <next hop>
+

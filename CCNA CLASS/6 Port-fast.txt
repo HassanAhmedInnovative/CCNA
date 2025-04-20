@@ -1,0 +1,20 @@
+
+
+		***port-fast***
+
+-cisco proprietary enhancement to spanning tree
+-helps speed up access ports for network convergence
+-portfast causes access port to enter into forward state directly
+
+inteface level
+
+#int range f0/1 -24
+#spanning-tree port-fast
+
+Global configuration mode
+#spanning-tree port-fast default
+
+
+
+
+

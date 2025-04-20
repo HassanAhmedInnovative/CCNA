@@ -1,0 +1,69 @@
+		OSPF-open shortest path first
+
+Documentation:- ospf anatomy - john T.moy 
+What is ospf:-
+	open standard based interior gateway routing protocol
+	link state routing protcol :
+		link -physical connection device
+		state:- it description to neighbor
+	uses spf (or) diskstra alogaritham
+	metric-cost=(10*8/bandwidth)
+	unlimited hops
+	incremental updates
+	hello-10sec,dead 40
+	administrative distance 110
+	load balancing only on equl cost 
+	support flsm /vlsm
+
+Ospf requires more planing becacuse of it's heirarchial designing of areas.
+You must create a area 0; which is central area or main area.
+
+*ospf router types:-
+1 Backbone router - configured only area 0/ core router / redundancy 
+2 ABR - area border router -Connects other areas to area 0
+3 INTERNAL routers -router configued only in one area  (ie area 1)
+4 ASBR- advertizes external routes
+5 DR - designated router
+6 BDR- backup designated router
+
+OSPF neighbor states:
+1 Down state : no hellos have been heard from the neighbor's router
+2 Attempt
+3 init - indicates a hello packet has been heard from the neighbor,
+4 2-way
+5 exstart
+6 exchange
+7 loading
+8 full  
+
+
+
+
+****LSA types****
+
+1  - router lsa
+2  - network lsas
+3 & 4 summary lsas
+5 autonomous system
+	external lsas
+6 multicast ospf lsa
+7 defined for not-so-stubby areas
+8 external attributes lsa for 
+   border gateway protocol
+9,10,11 Opaque lsas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

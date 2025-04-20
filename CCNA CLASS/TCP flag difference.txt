@@ -1,0 +1,8 @@
+	FIN			RST
+gracefully terminates		abruptily tells other side to stop
+the connection		communicatating
+
+only one side of 		the whole conversation is 
+convesation is stoped		stopped
+
+no data loss		data is discarded

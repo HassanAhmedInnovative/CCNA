@@ -1,0 +1,17 @@
+Creating policy by numbered ACL:-
+R1(config)# access-list 101 deny icmp host 10.0.0.1 host 192.168.1.1 echo
+R1(config)# access-list 101 deny icmp host 10.0.0.1 host 192.168.1.1 echo-reply
+R1(config)#access-list 101 permit ip any any
+Apply policy:-
+R1(config)# int f0/0
+R1(config-if)# ip access-group 101 out 
+
+time based acl
+
+Time Based ACL:
+R1(config)# time-range WEEKDAYS
+R1(config-time-range)# periodic weekdays 8:00 to 17:00
+R1(config-time-range)# exit
+R1(config)# access-list 100 permit tcp any any eq 80 time-range WEEKDAYS
+R1(config)# interface  f0/1
+R1(config-if)# ip access-group 100 in

@@ -1,0 +1,51 @@
+
+		Traditional router based networks:-
+Leased line connection:-
+Advantages:- complete secure, high bandwidth, superior quality, Reliable
+Disadvantages:-expensive,not scalable,
+
+Vpn:- Establish a private network on existing public network. 
+          vpn completely replaces point to point connection.
+Eg:-x.25, Atm, frame relay, GRE, DMVPN, IPSec,Mpls, L2tpv3
+Advantages:- cost savings, scalability, improved security,Reliable,flexiable
+	
+vpn over internet:-
+GRE:- generic routing encapsulation, is tunneling protocol developed by cisco  	gre does not encrypt the data but encapsulates
+	it is point to point
+	max= 99
+	        
+DMVPN:- point to multipoint, No encryption
+	
+Ipsec:- Encryption is provided, both ends must have registerd public ip
+
+
+DMVPN:-
+Introduced by cisco in late 2000
+-automatically created vpn tunnels with dynamic ip addrss on the spokes are in use
+-this is pure hub & spoke technology
+-dmvpn combination of fallowing technologies
+	-Mgre
+	-NHRP - next hop resolution protocol
+	-Dynamic routing protocol
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

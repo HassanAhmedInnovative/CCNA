@@ -1,0 +1,64 @@
+		****STP FLAVORS****
+
+PVSTP - per vlan stp
+	-every vlan runs a separate stp instance
+	-cisco proprietary & default in catalyst switches
+	-provide load sharing
+	-more over head
+
+configure trunk and vtp 
+
+SWITCH 1
+#spanning-tree vlan 10,20 root primary
+#spanning-tree vlan 30,40 root secondary
+
+SWITCH 2
+#spanning-tree vlan 10,20 root secondary
+#spanning-tree vlan 30,40 root primary
+
+************************************************************************
+
+RSTP :- rapid pervlan stp
+
+802.1 is standards way of speeding stp convergence
+inbuild features are portfast, uplinkfast, backbonefast
+hello-2 seconds,  dead 6 seconds
+#spanning-tree mode rapid-pvst
+
+**************************************************************************
+ MSTP :- multiple spanning tree protocol
+
+- it allows vlans to be mapped to single instance
+- Reduces number of spanning tree instances
+- instance is created once we enable mstp
+- less overhead on the switches
+- load sharing supported
+
+configure trunk and vtp
+
+do mst conifiguration in switch1 & switch2 
+
+mst configuration
+#spa mode mst
+#spa mst configuration
+#revision 1
+#name ccie
+#instance 1 vlan 10,20,30
+#instance 2 vlan 40,50,60
+#exit
+
+in the switch1
+#spa mst 1 root primary
+#spa mst 2 root secondary
+
+in the switch2
+#spa mst 1 root secondary
+#spa mst 2 root primary
+
+
+
+
+
+
+
+

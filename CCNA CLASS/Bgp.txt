@@ -1,0 +1,37 @@
+	***BGP - Border gateway protocol****
+
+-Igp's opearate within the single AS
+-Bgp is used between autonamous systems.
+-open standard
+-Exterior gateway protocol
+-Designed for inter-as domain routing
+-Classless
+-Updates are incremental
+-path vector protocol
+
+*-it sends updates manually defined neighbor as unicast
+* Bgp is application layer protocol uses tcp  for relilibility (TCP port 179)
+*metric - attributes
+Administrative distance
+	20 - external updates
+	200 - internal updates
+-Exchange of loop-free routing information is guaranteed.
+-path vector protocol includes information about exact path
+-BGP routes are controlled by bgp attibutes
+
+BGP packets
+
+open - (hello packet) + 60S 
+keepalive -  180S
+update - routes are exchanging by router
+notification- close the seesion
+
+BGP tables:-
+1 Neighbor table
+	ibgp peers - bgp neighbors within the same AS
+	ebgp peers - bgp neighbors connecting different AS
+2 Routing table
+
+
+
+

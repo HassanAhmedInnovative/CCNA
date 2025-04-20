@@ -1,0 +1,19 @@
+
+		***NAT-Network Address Translation ***
+Nat is translator; translates private ip address to public ip address
+& public ip address to private ip address.
+Advantages:-
+	1 Nat Provides security
+	2 Restrict useage of public ip address
+Nat Types:-
+1 Nat overload
+2 Static nat
+3 Dynamic nat
+
+Nat overload:- It translates multiple private ip address to single public
+		ip address.
+		Such type of nat configured for accessing internet
+Static Nat:- Translates a single private ip address to single public ip
+	     mostly configured for hosting web servers.
+Dynamic nat:- Translates multiple private ip address to multiple public
+		ip address.

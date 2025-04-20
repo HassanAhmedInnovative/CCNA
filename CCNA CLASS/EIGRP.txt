@@ -1,0 +1,22 @@
+
+	**** EIGRP - Enahanced Interior Gateway Routing Protocol****
+
+- It is cisco proprietary until 2013; but now standardised
+-It is distance vector dynamic routing protocol
+-It uses diffusing update alogarithm
+-Eigrp advertises routes with in the same Autonomous systems
+	supports 1-65535
+-Maximum hops supported are 255
+-metric = Bw+load+Delay+MTU+Reliability
+-Does incremental updates, does not do perdicall updates.
+-Administrative distance for eigrp routes are 90
+- EIGRP packets:-
+	-Hello
+	-Update
+	-Ack
+	-query
+	-reply
+-Eigrp tables:-
+	- eigrp neighbor  - Show ip eigrp neighbor
+	- Eigrp topology  - show ip eigrp topology
+	- Eigrp routes    -show ip route eigrp

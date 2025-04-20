@@ -1,0 +1,14 @@
+
+	****Routing****
+
+It is process of sending packets to destination by selecting best path.
+Commonly router does routing(layer3 devices, firewalls, load balencers).
+
+Router maintains routing table; which is destination base for router
+to forward packets.
+Routing table contains source network, destinations network,hops ...etc..
+	Routing are three types:-
+	1 static
+	2 dynamic
+	3 default
+

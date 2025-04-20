@@ -1,0 +1,80 @@
+
+		*** CCNA - Cisco Certified Network Associate ***
+			ccna- 200-301
+
+1 Network fundtamentals
+2 Network Access
+3 Ip connectivity
+4 Ip Services
+5 Security Fundamentals
+6 Automation & Programbility
+
+*************************************************************
+Network Fundtamentals:-
+
+What is Network & Networking
+Types of networks?
+
+Network is interconnection of devices.
+
+Sharing resources with in interconnected devices is called as networking. 
+
+Types of network:-
+
+1 LAN -local area network
+2 MAN -metropolitan area network
+3 WAN -wide area network
+
+lan:- network established with in limited geographial area 
+	Distance - 100 meters to 1 km
+	Eg:- 	PAN- personal area network
+		SOHO- small office /home office
+		CAN - campus area network
+
+MAN:- network established with in metropolitan city
+	Distance - 27 km / 50km
+	eg:- city to city
+Wan:- network established with in unlimited geographial area
+	Distance - unlimited
+	eg:- country to country
+
+
+Requirements to configure network:-
+
+1 System with operating system
+2 Network interfaces card
+3 Transmission media
+4 Topology
+5 Protocol
+6 Ip address
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+
+
+Tcp flags:-
+
+1 urgent pointer:- The first flag in the urgetn pointer flag.
+		   It is used to idenitfy incoming data as urgent.
+
+2 acknowledgement (ack) :- used to acknowedge the successful receipt 
+		   of packets.
+
+3 push:- exists to ensure that the data is given the priority  and is 	 processed at the sending or receiving end
+
+4 Reset (RST) flag:-
+when a destination reject source request and then send you a reply with the RST flag set.
+
+5 synchronization (syn) flag:-
+	SYN flag is initialy sent when establishing the classical 3-way handshake between two hosts
+
+6 Finished (fin) flag
+
+This flag is used to stops the virtual connections. 

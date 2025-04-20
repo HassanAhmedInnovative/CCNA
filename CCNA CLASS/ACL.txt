@@ -1,0 +1,17 @@
+
+		***ACL - Access control List ***
+
+- It is a ios based firewall, used to deny/ allow specific traffic
+
+-Acls are also known as packet filtering firewall
+
+-It functions at layer 3 security
+
+			Types acl
+	standard			extended
+
+numbered   named                                   numbered   named
+access-list 1-99			acess-list 100-199
+filters only source address		filters source/destination/service
+all services are denied			some services are denied
+can be applied for host/subnet/network    can be applied for host/subnet/network
